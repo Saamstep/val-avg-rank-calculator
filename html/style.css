@@ -1,6 +1,55 @@
 @import url("https://fonts.googleapis.com/css?family=Open%20Sans");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 
 h1 {
-  color: white;
+  color: black;
+  font-family: Raleway;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  font-family: "Open Sans";
+  font-weight: bold;
+  text-align: center;
+}
+
+body {
+  /* font-family: "Open Sans"; */
+  text-align: center;
+}
+
+p {
+  color: black;
+  font-family: "Open Sans";
+  font-size: x-large;
+}
+
+button {
+  color: #fff !important;
+  background: #e83151;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.4s ease 0s;
+  font-size: large;
+}
+
+button:hover {
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+  font-size: large;
+}
+
+select {
+  margin: 5px;
+  font-size: x-large;
   font-family: "Open Sans";
 }

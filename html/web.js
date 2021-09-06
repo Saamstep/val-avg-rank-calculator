@@ -64,7 +64,7 @@ function rank() {
 
   let rounded = Math.floor(sum);
 
-  document.getElementById("demo").innerHTML = `<br>${sum}<br>${rounded}<br>${key2[rounded]}`;
+  document.getElementById("demo").innerHTML = `<br><h2>Sum:</h2><p>${sum}</p><h2>Rounded:</h2><p>${rounded}</p><h2>Rank:</h2><p>${key2[rounded]}</p>`;
 }
 
 function newPlayer() {
