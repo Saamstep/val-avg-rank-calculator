@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<head>
+  <script type="text/javascript" src="web.js"></script>
+  <style rel="stylesheet" href="style.css"></style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    body {
+      background-image: url("https://pacificesports.org/wp-content/uploads/Fall-Frenzy.png");
+    }
+  </style>
+</head>
+
+<h1>Division Calculator</h1>
+
+<button onclick="newPlayer()">Add Player</button>
+
+<form id="form">
+  <select id="player" name="player1">
+    <option value="blank"></option>
+    <option value="i1">Iron 1</option>
+    <option value="i2">Iron 2</option>
+    <option value="i3">Iron 3</option>
+    <option value="b1">Bronze 1</option>
+    <option value="b2">Bronze 2</option>
+    <option value="b3">Bronze 3</option>
+    <option value="s1">Silver 1</option>
+    <option value="s2">Silver 2</option>
+    <option value="s3">Silver 3</option>
+    <option value="g1">Gold 1</option>
+    <option value="g2">Gold 2</option>
+    <option value="g3">Gold 3</option>
+    <option value="p1">Platinum 1</option>
+    <option value="p2">Platinum 2</option>
+    <option value="p3">Platinum 3</option>
+    <option value="d1">Diamond 1</option>
+    <option value="d2">Diamond 2</option>
+    <option value="d3">Diamond 3</option>
+    <option value="i">Immortal</option>
+    <option value="r">Radiant</option>
+  </select>
+  <br />
+  <select id="player" name="player2">
+    <option value="blank"></option>
+    <option value="i1">Iron 1</option>
+    <option value="i2">Iron 2</option>
+    <option value="i3">Iron 3</option>
+    <option value="b1">Bronze 1</option>
+    <option value="b2">Bronze 2</option>
+    <option value="b3">Bronze 3</option>
+    <option value="s1">Silver 1</option>
+    <option value="s2">Silver 2</option>
+    <option value="s3">Silver 3</option>
+    <option value="g1">Gold 1</option>
+    <option value="g2">Gold 2</option>
+    <option value="g3">Gold 3</option>
+    <option value="p1">Platinum 1</option>
+    <option value="p2">Platinum 2</option>
+    <option value="p3">Platinum 3</option>
+    <option value="d1">Diamond 1</option>
+    <option value="d2">Diamond 2</option>
+    <option value="d3">Diamond 3</option>
+    <option value="i">Immortal</option>
+    <option value="r">Radiant</option>
+  </select>
+  <br />
+  <select id="player" name="player3">
+    <option value="blank"></option>
+    <option value="i1">Iron 1</option>
+    <option value="i2">Iron 2</option>
+    <option value="i3">Iron 3</option>
+    <option value="b1">Bronze 1</option>
+    <option value="b2">Bronze 2</option>
+    <option value="b3">Bronze 3</option>
+    <option value="s1">Silver 1</option>
+    <option value="s2">Silver 2</option>
+    <option value="s3">Silver 3</option>
+    <option value="g1">Gold 1</option>
+    <option value="g2">Gold 2</option>
+    <option value="g3">Gold 3</option>
+    <option value="p1">Platinum 1</option>
+    <option value="p2">Platinum 2</option>
+    <option value="p3">Platinum 3</option>
+    <option value="d1">Diamond 1</option>
+    <option value="d2">Diamond 2</option>
+    <option value="d3">Diamond 3</option>
+    <option value="i">Immortal</option>
+    <option value="r">Radiant</option>
+  </select>
+  <br />
+  <select id="player" name="player4">
+    <option value="blank"></option>
+    <option value="i1">Iron 1</option>
+    <option value="i2">Iron 2</option>
+    <option value="i3">Iron 3</option>
+    <option value="b1">Bronze 1</option>
+    <option value="b2">Bronze 2</option>
+    <option value="b3">Bronze 3</option>
+    <option value="s1">Silver 1</option>
+    <option value="s2">Silver 2</option>
+    <option value="s3">Silver 3</option>
+    <option value="g1">Gold 1</option>
+    <option value="g2">Gold 2</option>
+    <option value="g3">Gold 3</option>
+    <option value="p1">Platinum 1</option>
+    <option value="p2">Platinum 2</option>
+    <option value="p3">Platinum 3</option>
+    <option value="d1">Diamond 1</option>
+    <option value="d2">Diamond 2</option>
+    <option value="d3">Diamond 3</option>
+    <option value="i">Immortal</option>
+    <option value="r">Radiant</option>
+  </select>
+  <br />
+  <select id="player" name="player5">
+    <option value="blank"></option>
+    <option value="i1">Iron 1</option>
+    <option value="i2">Iron 2</option>
+    <option value="i3">Iron 3</option>
+    <option value="b1">Bronze 1</option>
+    <option value="b2">Bronze 2</option>
+    <option value="b3">Bronze 3</option>
+    <option value="s1">Silver 1</option>
+    <option value="s2">Silver 2</option>
+    <option value="s3">Silver 3</option>
+    <option value="g1">Gold 1</option>
+    <option value="g2">Gold 2</option>
+    <option value="g3">Gold 3</option>
+    <option value="p1">Platinum 1</option>
+    <option value="p2">Platinum 2</option>
+    <option value="p3">Platinum 3</option>
+    <option value="d1">Diamond 1</option>
+    <option value="d2">Diamond 2</option>
+    <option value="d3">Diamond 3</option>
+    <option value="i">Immortal</option>
+    <option value="r">Radiant</option>
+  </select>
+  <br />
+</form>
+<button type="submit" onclick="rank()">Submit</button>
+
+<div id="demo"></div>
