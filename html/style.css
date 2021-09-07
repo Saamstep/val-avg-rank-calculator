@@ -2,28 +2,60 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
 h1 {
-  color: black;
+  color: white;
   font-family: Raleway;
   font-weight: bold;
   text-align: center;
 }
 
 h2 {
-  color: black;
+  color: white;
   font-family: "Open Sans";
   font-weight: bold;
   text-align: center;
+  display: inline;
+}
+
+h3 {
+  color: black;
+  font-family: "Open Sans";
+  font-weight: bold;
+  text-align: left;
+  padding-left: 15%;
 }
 
 body {
   /* font-family: "Open Sans"; */
   text-align: center;
+  background-color: #232021;
+  display: inline;
 }
 
 p {
-  color: black;
+  color: white;
   font-family: "Open Sans";
   font-size: x-large;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+  background-color: white;
+  box-shadow: black;
+  border-radius: 5px;
+  padding: 20px;
+  padding-bottom: 45px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+li {
+  color: black;
+  font-family: "Open Sans";
+  font-size: small;
+  text-align: left;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 button {
@@ -52,4 +84,11 @@ select {
   margin: 5px;
   font-size: x-large;
   font-family: "Open Sans";
+}
+
+#demo {
+  font-family: "Open Sans";
+  font-weight: bolder;
+  font-size: x-large;
+  color: white;
 }

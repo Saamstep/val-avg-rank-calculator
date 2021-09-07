@@ -8,9 +8,19 @@
 
 <body>
 <div class="box">
-  <h1>Division Calculator</h1>
+  <!-- <img src="../icon.png"> -->
+  <h1><strong>Division Calculator</strong></h1>
 
-  <button onclick="newPlayer()">Add Player</button>
+  <ul>
+  <h3>Division 2 Requirements</h3>
+  <li>Your team’s rank must be at gold average and below.</li>
+  <li>No players may be added mid-season that would increase the average rank past gold. If a player on a team ranks up and brings the team average above gold, the player and team will stay in the division they were in until the start of the next season.</li>
+  <li>You can only have 2 players max on the team that are above gold </li>
+  <li>No Player on your team may be Immortal+</li>
+</ul>
+
+  <br>
+  <button onclick="newPlayer()">Add Player</button> <button onclick="location.reload()">Reset</button>
 
   <form id="form">
     <select id="player" name="player1">
@@ -137,5 +147,5 @@
   <button type="submit" onclick="rank()">Submit</button>
 
   <div id="demo"></div>
-</body>
 </div>
+</body>
