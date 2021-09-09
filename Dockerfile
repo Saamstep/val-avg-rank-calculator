@@ -8,4 +8,6 @@ RUN npm ci --only=production
 
 COPY . .
 
+EXPOSE 8888
+
 CMD ["node", "app.js"]
