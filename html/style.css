@@ -42,11 +42,14 @@ ul {
   list-style-position: inside;
   background-color: white;
   box-shadow: black;
-  border-radius: 5px;
-  padding: 20px;
-  padding-bottom: 45px;
-  margin-left: 500px;
-  margin-right: 500px;
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  justify-items: center;
+  display: table;
+  max-width: 50%;
+  min-width: 50%;
 }
 
 li {
