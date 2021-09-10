@@ -37,6 +37,13 @@ p {
   font-size: x-large;
 }
 
+a {
+  color: white;
+  font-family: "Open Sans";
+  font-size: smaller;
+  text-align: center;
+}
+
 ul {
   text-align: center;
   list-style-position: inside;

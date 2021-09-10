@@ -20,8 +20,10 @@ function rank() {
     d1: 16,
     d2: 17,
     d3: 18,
-    i: 19,
-    r: 20,
+    im1: 19,
+    im2: 20,
+    im3: 21,
+    r: 22,
     blank: 0,
   };
 
@@ -44,8 +46,10 @@ function rank() {
     16: "Diamond 1",
     17: "Diamond 2",
     18: "Diamond 3",
-    19: "Immortal",
-    20: "Radiant",
+    19: "Immortal 1",
+    20: "Immortal 2",
+    21: "Immortal 3",
+    22: "Radiant",
   };
 
   let sum = 0;
@@ -62,9 +66,9 @@ function rank() {
 
   sum /= elements.length + offset;
 
-  let rounded = Math.floor(sum);
+  let rounded = Math.round(sum);
 
-  document.getElementById("demo").innerHTML = `<h2>Sum:</h2> ${sum}<br><h2>Rounded:</h2> ${rounded}<br><h2>Rank:</h2> ${key2[rounded]}`;
+  document.getElementById("demo").innerHTML = `<h2>Average:</h2> ${sum}<br><h2>Rounded Avg:</h2> ${rounded}<br><h2>Rank:</h2> ${key2[rounded]}`;
 }
 
 function newPlayer() {
