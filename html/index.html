@@ -6,11 +6,12 @@
   <link rel="stylesheet" href="style.css"></style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>PEL | Rank Calculator</title>
-  <link rel="shortcut icon" type="image/jpg" href="https://pacificesports.org/wp-content/uploads/2021/05/cropped-Mark-Color-min-min.png"/>
+  <!-- <link rel="shortcut icon" type="image/jpg" href="https://pacificesports.org/wp-content/uploads/2021/05/cropped-Mark-Color-min-min.png"/> -->
+  <link rel="shortcut icon" href="../PEL.ico"
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="PEL | Calculator">
   <meta property="og:title" content="Team Division Calculator">
-  <meta property="og:description" content="Find out what divisions your team is able to compete in with our easy to use calculator tool. Please consult the rules for full list of requirements">
+  <meta property="og:description" content="Find out what division(s) your team is able to compete in with our easy to use calculator tool. Please consult the rules for full list of requirements">
 </head>
 
 <body>
@@ -18,14 +19,17 @@
   <h1><strong>Division Calculator</strong></h1>
 
   <ul>
-  <h3>Division 2 Requirements</h3>
-  <li>Your team’s rank must be at gold average and below.</li>
-  <li>No players may be added mid-season that would increase the average rank past gold. If a player on a team ranks up and brings the team average above gold, the player and team will stay in the division they were in until the start of the next season.</li>
-  <li>You can only have 2 players max on the team that are above gold </li>
-  <li>No Player on your team may be Immortal+</li>
-  <li>Please consult the <a href="https://support.pacificesports.org/rules/valorant#1-division-1-and-division-2" style="color: black;font-size: small;" target="_blank">rules</a> for full list of requirements</li>
+  <h3>Tournament Divisions</h3>
+  <li>We have three unique divisions this season.</li>
+  <li>Please consult the <a href="https://support.pacificesports.org/rules/tournament-divisions" style="color: black;font-size: small;" target="_blank">rules</a> for full list of rules & requirements.</li>
+  <br>
+  <li><b>Division 1:</b> All ranks allowed</li>
+  <li><b>Division 2:</b> Team Ranks Plat and below</li>
+  <li><b>Division 3:</b> Team Ranks Silver and below</li>
 </ul>
 
+  <br>
+  <a class="button" href="https://support.pacificesports.org/rules/tournament-divisions" target="_blank">Division Rules</button></a>
   <br>
   <button onclick="newPlayer()">Add Player</button> <button onclick="location.reload()">Reset</button>
 
@@ -161,11 +165,9 @@
     </select>
     <br />
   </form>
-  <button type="submit" onclick="rank()">Submit</button>
+  <button type="submit" onclick="rank()">Calculate</button>
   <br>
-  <a href="https://support.pacificesports.org/rules/valorant#1-division-1-and-division-2" target="_blank">Need help?</a>
-  <a>|</a>
-  <a href="https://pacificesports.org/discord" target="_blank">Discord</a>
+  <a href="https://go.pacificesports.org/discord" target="_blank">Discord</a>
   <a>|</a>
   <a href="https://app.pacificesports.org" target="_blank">Portal</a>
 

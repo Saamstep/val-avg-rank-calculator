@@ -24,6 +24,14 @@ h3 {
   padding-left: 15%;
 }
 
+h4 {
+  color: black;
+  font-family: "Open Sans";
+  font-weight: bold;
+  text-align: left;
+  padding-left: 15%;
+}
+
 body {
   /* font-family: "Open Sans"; */
   text-align: center;
@@ -56,7 +64,7 @@ ul {
   justify-items: center;
   display: table;
   max-width: 50%;
-  min-width: 50%;
+  min-width: 20%;
 }
 
 li {
@@ -68,7 +76,8 @@ li {
   padding-right: 15%;
 }
 
-button {
+button,
+.button {
   color: #fff !important;
   background: #e83151;
   padding: 10px;
@@ -80,7 +89,8 @@ button {
   font-size: large;
 }
 
-button:hover {
+button:hover,
+.button:hover {
   background: #434343;
   letter-spacing: 1px;
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
