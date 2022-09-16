@@ -7,7 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>PEL | Rank Calculator</title>
   <!-- <link rel="shortcut icon" type="image/jpg" href="https://pacificesports.org/wp-content/uploads/2021/05/cropped-Mark-Color-min-min.png"/> -->
-  <link rel="shortcut icon" href="./PEL.ico"
+  <link rel="shortcut icon" href="./icon.png"
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="PEL | Calculator">
   <meta property="og:title" content="Team Division Calculator">
@@ -16,21 +16,18 @@
 
 <body>
 <div class="box">
-  <h1><strong>Division Calculator</strong></h1>
-
-  <ul>
-  <h3>Tournament Divisions</h3>
+  <h1>Division Calculator</h1>
+<ul>
   <li>We have three unique divisions this season.</li>
-  <li>Please consult the <a href="https://support.pacificesports.org/rules/tournament-divisions" style="color: black;font-size: small;" target="_blank">rules</a> for full list of rules & requirements.</li>
-  <br>
-  <li><b>Division 1:</b> All ranks allowed</li>
-  <li><b>Division 2:</b> Team Ranks Plat and below</li>
-  <li><b>Division 3:</b> Team Ranks Silver and below</li>
+  <li>🔵 Please consult the <a class="blue" href="https://support.pacificesports.org/rules/tournament-divisions" target="_blank">division rules</button></a> for full list of rules & requirements. 🔵</li>
+  <div style="text-align: center;">
+    <div style="display: inline-block; text-align: left; margin-bottom: 10px;">
+    <li><b>Division 1:</b> Team Average Rank Ascendant+</li>
+    <li><b>Division 2:</b> Team Average Rank Platinum and Below</li>
+    <li><b>Division 3:</b> Team Average Rank Silver and Below</li>
+  </div>
+  </div> 
 </ul>
-
-  <br>
-  <a class="button" href="https://support.pacificesports.org/rules/tournament-divisions" target="_blank">Division Rules</button></a>
-  <br>
   <button onclick="newPlayer()">Add Player</button> <button onclick="location.reload()">Reset</button>
 
   <form id="form">
@@ -54,6 +51,9 @@
       <option value="d1">Diamond 1</option>
       <option value="d2">Diamond 2</option>
       <option value="d3">Diamond 3</option>
+      <option value="a1">Ascendant 1</option>
+      <option value="a2">Ascendant 2</option>
+      <option value="a3">Ascendant 3</option>
       <option value="im1">Immortal 1</option>
       <option value="im2">Immortal 2</option>
       <option value="im3">Immortal 3</option>
@@ -80,6 +80,9 @@
       <option value="d1">Diamond 1</option>
       <option value="d2">Diamond 2</option>
       <option value="d3">Diamond 3</option>
+      <option value="a1">Ascendant 1</option>
+      <option value="a2">Ascendant 2</option>
+      <option value="a3">Ascendant 3</option>
       <option value="im1">Immortal 1</option>
       <option value="im2">Immortal 2</option>
       <option value="im3">Immortal 3</option>
@@ -106,6 +109,9 @@
       <option value="d1">Diamond 1</option>
       <option value="d2">Diamond 2</option>
       <option value="d3">Diamond 3</option>
+      <option value="a1">Ascendant 1</option>
+      <option value="a2">Ascendant 2</option>
+      <option value="a3">Ascendant 3</option>
       <option value="im1">Immortal 1</option>
       <option value="im2">Immortal 2</option>
       <option value="im3">Immortal 3</option>
@@ -132,6 +138,9 @@
       <option value="d1">Diamond 1</option>
       <option value="d2">Diamond 2</option>
       <option value="d3">Diamond 3</option>
+      <option value="a1">Ascendant 1</option>
+      <option value="a2">Ascendant 2</option>
+      <option value="a3">Ascendant 3</option>
       <option value="im1">Immortal 1</option>
       <option value="im2">Immortal 2</option>
       <option value="im3">Immortal 3</option>
@@ -158,6 +167,9 @@
       <option value="d1">Diamond 1</option>
       <option value="d2">Diamond 2</option>
       <option value="d3">Diamond 3</option>
+      <option value="a1">Ascendant 1</option>
+      <option value="a2">Ascendant 2</option>
+      <option value="a3">Ascendant 3</option>
       <option value="im1">Immortal 1</option>
       <option value="im2">Immortal 2</option>
       <option value="im3">Immortal 3</option>
@@ -167,14 +179,23 @@
   </form>
   <button type="submit" onclick="rank()">Calculate</button>
   <br>
-  <a href="https://go.pacificesports.org/discord" target="_blank">Discord</a>
-  <a>|</a>
-  <a href="https://app.pacificesports.org" target="_blank">Portal</a>
-
-  <div id="demo"></div>
+  <div style="text-align: center;">
+    <div style="display: inline-block; text-align: left; margin-bottom: 10px;">
+      <div id="demo"></div>
+    </div>
+  </div>
 </div>
 
 
 </body>
+
+<footer>
+  <a href="https://pel.gg/discord" class="blue" target="_blank">Discord</a>
+  <a>|</a>
+  <a href="https://app.pacificesports.org" class="blue" target="_blank">Portal</a>
+  <a>|</a>
+  <a href="https://support.pacificesports.org" class="blue" target="_blank">Support Center</a>
+</footer>
+
 
 </html>
