@@ -7,7 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>PEL | Rank Calculator</title>
   <!-- <link rel="shortcut icon" type="image/jpg" href="https://pacificesports.org/wp-content/uploads/2021/05/cropped-Mark-Color-min-min.png"/> -->
-  <link rel="shortcut icon" href="./icon.png"
+  <link rel="shortcut icon" href="./icon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="PEL | Calculator">
   <meta property="og:title" content="Team Division Calculator">
@@ -16,186 +16,23 @@
 
 <body>
 <div class="box">
-  <h1>DIVISION CALCULATOR</h1>
-<ul>
-  <li>We have three unique divisions this season.</li>
-  <li>🔵 Please consult the <a class="blue" href="https://support.pacificesports.org/rules/tournament-divisions" target="_blank">division rules</button></a> for full list of rules & requirements. 🔵</li>
-  <div style="text-align: center;">
-    <div style="display: inline-block; text-align: left; margin-bottom: 10px;">
-    <li><b>Division 1:</b> Team Average Rank Ascendant+</li>
-    <li><b>Division 2:</b> Team Average Rank Diamond 3 and below.</li>
-    <li><b>Division 3:</b> Team Average Rank Gold 3 and below. </li>
-  </div>
-  </div> 
-</ul>
-  <button onclick="newPlayer()">Add Player</button> <button onclick="location.reload()">Reset</button>
+    <h1>DIVISION CALCULATOR</h1>
 
-  <form id="form">
-    <select id="player" name="player1">
-      <option value="blank"></option>
-      <option value="i1">Iron 1</option>
-      <option value="i2">Iron 2</option>
-      <option value="i3">Iron 3</option>
-      <option value="b1">Bronze 1</option>
-      <option value="b2">Bronze 2</option>
-      <option value="b3">Bronze 3</option>
-      <option value="s1">Silver 1</option>
-      <option value="s2">Silver 2</option>
-      <option value="s3">Silver 3</option>
-      <option value="g1">Gold 1</option>
-      <option value="g2">Gold 2</option>
-      <option value="g3">Gold 3</option>
-      <option value="p1">Platinum 1</option>
-      <option value="p2">Platinum 2</option>
-      <option value="p3">Platinum 3</option>
-      <option value="d1">Diamond 1</option>
-      <option value="d2">Diamond 2</option>
-      <option value="d3">Diamond 3</option>
-      <option value="a1">Ascendant 1</option>
-      <option value="a2">Ascendant 2</option>
-      <option value="a3">Ascendant 3</option>
-      <option value="im1">Immortal 1</option>
-      <option value="im2">Immortal 2</option>
-      <option value="im3">Immortal 3</option>
-      <option value="r">Radiant</option>
-    </select>
-    <br />
-    <select id="player" name="player2">
-      <option value="blank"></option>
-      <option value="i1">Iron 1</option>
-      <option value="i2">Iron 2</option>
-      <option value="i3">Iron 3</option>
-      <option value="b1">Bronze 1</option>
-      <option value="b2">Bronze 2</option>
-      <option value="b3">Bronze 3</option>
-      <option value="s1">Silver 1</option>
-      <option value="s2">Silver 2</option>
-      <option value="s3">Silver 3</option>
-      <option value="g1">Gold 1</option>
-      <option value="g2">Gold 2</option>
-      <option value="g3">Gold 3</option>
-      <option value="p1">Platinum 1</option>
-      <option value="p2">Platinum 2</option>
-      <option value="p3">Platinum 3</option>
-      <option value="d1">Diamond 1</option>
-      <option value="d2">Diamond 2</option>
-      <option value="d3">Diamond 3</option>
-      <option value="a1">Ascendant 1</option>
-      <option value="a2">Ascendant 2</option>
-      <option value="a3">Ascendant 3</option>
-      <option value="im1">Immortal 1</option>
-      <option value="im2">Immortal 2</option>
-      <option value="im3">Immortal 3</option>
-      <option value="r">Radiant</option>
-    </select>
-    <br />
-    <select id="player" name="player3">
-      <option value="blank"></option>
-      <option value="i1">Iron 1</option>
-      <option value="i2">Iron 2</option>
-      <option value="i3">Iron 3</option>
-      <option value="b1">Bronze 1</option>
-      <option value="b2">Bronze 2</option>
-      <option value="b3">Bronze 3</option>
-      <option value="s1">Silver 1</option>
-      <option value="s2">Silver 2</option>
-      <option value="s3">Silver 3</option>
-      <option value="g1">Gold 1</option>
-      <option value="g2">Gold 2</option>
-      <option value="g3">Gold 3</option>
-      <option value="p1">Platinum 1</option>
-      <option value="p2">Platinum 2</option>
-      <option value="p3">Platinum 3</option>
-      <option value="d1">Diamond 1</option>
-      <option value="d2">Diamond 2</option>
-      <option value="d3">Diamond 3</option>
-      <option value="a1">Ascendant 1</option>
-      <option value="a2">Ascendant 2</option>
-      <option value="a3">Ascendant 3</option>
-      <option value="im1">Immortal 1</option>
-      <option value="im2">Immortal 2</option>
-      <option value="im3">Immortal 3</option>
-      <option value="r">Radiant</option>
-    </select>
-    <br />
-    <select id="player" name="player4">
-      <option value="blank"></option>
-      <option value="i1">Iron 1</option>
-      <option value="i2">Iron 2</option>
-      <option value="i3">Iron 3</option>
-      <option value="b1">Bronze 1</option>
-      <option value="b2">Bronze 2</option>
-      <option value="b3">Bronze 3</option>
-      <option value="s1">Silver 1</option>
-      <option value="s2">Silver 2</option>
-      <option value="s3">Silver 3</option>
-      <option value="g1">Gold 1</option>
-      <option value="g2">Gold 2</option>
-      <option value="g3">Gold 3</option>
-      <option value="p1">Platinum 1</option>
-      <option value="p2">Platinum 2</option>
-      <option value="p3">Platinum 3</option>
-      <option value="d1">Diamond 1</option>
-      <option value="d2">Diamond 2</option>
-      <option value="d3">Diamond 3</option>
-      <option value="a1">Ascendant 1</option>
-      <option value="a2">Ascendant 2</option>
-      <option value="a3">Ascendant 3</option>
-      <option value="im1">Immortal 1</option>
-      <option value="im2">Immortal 2</option>
-      <option value="im3">Immortal 3</option>
-      <option value="r">Radiant</option>
-    </select>
-    <br />
-    <select id="player" name="player5">
-      <option value="blank"></option>
-      <option value="i1">Iron 1</option>
-      <option value="i2">Iron 2</option>
-      <option value="i3">Iron 3</option>
-      <option value="b1">Bronze 1</option>
-      <option value="b2">Bronze 2</option>
-      <option value="b3">Bronze 3</option>
-      <option value="s1">Silver 1</option>
-      <option value="s2">Silver 2</option>
-      <option value="s3">Silver 3</option>
-      <option value="g1">Gold 1</option>
-      <option value="g2">Gold 2</option>
-      <option value="g3">Gold 3</option>
-      <option value="p1">Platinum 1</option>
-      <option value="p2">Platinum 2</option>
-      <option value="p3">Platinum 3</option>
-      <option value="d1">Diamond 1</option>
-      <option value="d2">Diamond 2</option>
-      <option value="d3">Diamond 3</option>
-      <option value="a1">Ascendant 1</option>
-      <option value="a2">Ascendant 2</option>
-      <option value="a3">Ascendant 3</option>
-      <option value="im1">Immortal 1</option>
-      <option value="im2">Immortal 2</option>
-      <option value="im3">Immortal 3</option>
-      <option value="r">Radiant</option>
-    </select>
-    <br />
-  </form>
-  <button type="submit" onclick="rank()">Calculate</button>
-  <br>
-  <div style="text-align: center;">
-    <div style="display: inline-block; text-align: left; margin-bottom: 10px;">
-      <div id="demo"></div>
-    </div>
-  </div>
+    <a href="/valorant"><img src="img/valorant-logo.png" class="icon"></a>
+    <a href="/league"><img src="img/lol.png" class="icon"></a>
+
+
 </div>
-
 
 </body>
 
 <footer>
-  <a href="https://pel.gg/discord" class="blue" target="_blank">Discord</a>
-  <a>|</a>
-  <a href="https://app.pacificesports.org" class="blue" target="_blank">Portal</a>
-  <a>|</a>
-  <a href="https://support.pacificesports.org" class="blue" target="_blank">Support Center</a>
-</footer>
-
-
-</html>
+    <a href="https://pel.gg/discord" class="blue" target="_blank">Discord</a>
+    <a>|</a>
+    <a href="https://app.pacificesports.org" class="blue" target="_blank">Portal</a>
+    <a>|</a>
+    <a href="https://support.pacificesports.org" class="blue" target="_blank">Support Center</a>
+  </footer>
+  
+  
+  </html>

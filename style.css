@@ -86,6 +86,29 @@ button,
   font-size: large;
 }
 
+.nav {
+  color: #fff !important;
+  background: #919191;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.4s ease 0s;
+  font-size: large;
+}
+
+.nav:hover {
+  background: #696868;
+  cursor: pointer;
+}
+
+.nav-active {
+  background: #000000;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
 button:hover,
 .button:hover {
   background: #0863cc;
@@ -114,4 +137,21 @@ footer {
   left: 0;
   bottom: 0;
   padding-bottom: 10px;
+  background-color: #121212;
+}
+
+.icon {
+  width: 100px;
+  padding: 5%;
+  align-items: center;
+}
+
+.icon:hover {
+  transform-origin: center center;
+  animation: scale 500ms ease-in-out forwards;
+}
+@keyframes scale {
+  to {
+    transform: scale(1.2);
+  }
 }
