@@ -141,13 +141,17 @@ function rank_lol() {
     p3: 18,
     p2: 19,
     p1: 20,
-    d4: 21,
-    d3: 22,
-    d2: 23,
-    d1: 24,
-    m: 25,
-    gm: 26,
-    ch: 27,
+    e4: 21,
+    e3: 22,
+    e2: 23,
+    e1: 24,
+    d4: 25,
+    d3: 26,
+    d2: 27,
+    d1: 28,
+    m: 29,
+    gm: 30,
+    ch: 31,
     blank: 0,
   };
 
@@ -172,13 +176,17 @@ function rank_lol() {
     18: "Platinum 3",
     19: "Platinum 2",
     20: "Platinum 1",
-    21: "Diamond 4",
-    22: "Diamond 3",
-    23: "Diamond 2",
-    24: "Diamond 1",
-    25: "Master",
-    26: "Grandmaster",
-    27: "Challenger",
+    21: "Emerald 4",
+    22: "Emerald 3",
+    23: "Emerald 2",
+    24: "Emerald 1",
+    25: "Diamond 4",
+    26: "Diamond 3",
+    27: "Diamond 2",
+    28: "Diamond 1",
+    29: "Master",
+    30: "Grandmaster",
+    31: "Challenger",
   };
 
   let sum = 0;
@@ -231,6 +239,10 @@ function newPlayer_lol() {
       <option value="p3">Platinum 3</option>
       <option value="p2">Platinum 2</option>
       <option value="p1">Platinum 1</option>
+      <option value="e4">Emerald 4</option>
+      <option value="e3">Emerald 3</option>
+      <option value="e2">Emerald 2</option>
+      <option value="e1">Emerald 1</option>
       <option value="d4">Diamond 4</option>
       <option value="d3">Diamond 3</option>
       <option value="d2">Diamond 2</option>
